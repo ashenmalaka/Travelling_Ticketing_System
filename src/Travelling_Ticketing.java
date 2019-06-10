@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -182,7 +185,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel8.setText("Number of Children");
 
         jComboBox_destination.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox_destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kandy", "Matara", "Badulle", "Jaffna" }));
+        jComboBox_destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Kandy", "Matara", "Badulle", "Jaffna" }));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("Destination");
@@ -645,6 +648,12 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
 
     private void jButton_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_exitActionPerformed
         // TODO add your handling code here:
+        /*Jframe frame = new Jframe("Exit");
+        if(JOptionPane.showMessageDialog(frame, "Confirm if you want to exit", "Travelling Systems", JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION)
+        {
+            System.exit(0);        
+        }*/
+        System.exit(0);
     }//GEN-LAST:event_jButton_exitActionPerformed
 
     private void jButton_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_totalActionPerformed
@@ -653,6 +662,34 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
 
     private void jButton_resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_resetActionPerformed
         // TODO add your handling code here:
+        jRadioButton_normal.setSelected(false);
+        jRadioButton_semiLuxury.setSelected(false);
+        jRadioButton_luxury.setSelected(false);
+        jRadioButton_firstClass.setSelected(false);
+        jRadioButton_secondClass.setSelected(false);
+        jRadioButton_thirdClass.setSelected(false);
+        jRadioButton_adult.setSelected(false);
+        jRadioButton_child.setSelected(false);
+        
+        jTextField_no_of_adults.setText(null);
+        jTextField_no_of_children.setText(null);
+        jTextField_tax.setText(null);
+        jTextField_tax.setText(null);
+        jTextField_total.setText(null);
+        jTextField_mode.setText(null);
+        jTextField_type.setText(null);
+        jTextField_adults.setText(null);
+        jTextField_children.setText(null);
+        jTextField_from.setText(null);
+        jTextField_to.setText(null);
+        jTextField_date.setText(null);
+        jTextField_time.setText(null);
+        jTextField_ticket_no.setText(null);
+        jTextField_total_price.setText(null);
+        
+        jComboBox_currentLocation.setSelectedItem("Colombo");
+        jComboBox_destination.setSelectedItem("Choose");
+        
     }//GEN-LAST:event_jButton_resetActionPerformed
 
     private void jTextField_adultsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_adultsActionPerformed
