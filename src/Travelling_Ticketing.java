@@ -31,63 +31,63 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton_normal = new javax.swing.JRadioButton();
+        jRadioButton_semiLuxury = new javax.swing.JRadioButton();
+        jRadioButton_luxury = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
+        jRadioButton_firstClass = new javax.swing.JRadioButton();
+        jRadioButton_secondClass = new javax.swing.JRadioButton();
+        jRadioButton_thirdClass = new javax.swing.JRadioButton();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
+        jRadioButton_adult = new javax.swing.JRadioButton();
+        jRadioButton_child = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jTextField_no_of_children = new javax.swing.JTextField();
+        jTextField_no_of_adults = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox_destination = new javax.swing.JComboBox<>();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox_currentLocation = new javax.swing.JComboBox<>();
         jSeparator4 = new javax.swing.JSeparator();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        jTextField_total = new javax.swing.JTextField();
+        jTextField_tax = new javax.swing.JTextField();
+        jTextField_subTotal = new javax.swing.JTextField();
         jSeparator7 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButton_exit = new javax.swing.JButton();
+        jButton_total = new javax.swing.JButton();
+        jButton_reset = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        jTextField_children = new javax.swing.JTextField();
+        jTextField_mode = new javax.swing.JTextField();
+        jTextField_type = new javax.swing.JTextField();
+        jTextField_adults = new javax.swing.JTextField();
         jSeparator9 = new javax.swing.JSeparator();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
+        jTextField_to = new javax.swing.JTextField();
+        jTextField_from = new javax.swing.JTextField();
+        jTextField_date = new javax.swing.JTextField();
+        jTextField_time = new javax.swing.JTextField();
         jSeparator10 = new javax.swing.JSeparator();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
+        jTextField_ticket_no = new javax.swing.JTextField();
+        jTextField_total_price = new javax.swing.JTextField();
         jSeparator11 = new javax.swing.JSeparator();
         jLabel24 = new javax.swing.JLabel();
 
@@ -123,50 +123,50 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Buses");
 
-        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton1.setText("Normal");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        jRadioButton_normal.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_normal.setText("Normal");
+        jRadioButton_normal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                jRadioButton_normalActionPerformed(evt);
             }
         });
 
-        jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton2.setText("Semi Luxury");
+        jRadioButton_semiLuxury.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_semiLuxury.setText("Semi Luxury");
 
-        jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton3.setText("Luxury");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        jRadioButton_luxury.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_luxury.setText("Luxury");
+        jRadioButton_luxury.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                jRadioButton_luxuryActionPerformed(evt);
             }
         });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Trains");
 
-        jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton4.setText("First Class");
+        jRadioButton_firstClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_firstClass.setText("First Class");
 
-        jRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton5.setText("Second Class");
+        jRadioButton_secondClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_secondClass.setText("Second Class");
 
-        jRadioButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton6.setText("Third Class");
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+        jRadioButton_thirdClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_thirdClass.setText("Third Class");
+        jRadioButton_thirdClass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
+                jRadioButton_thirdClassActionPerformed(evt);
             }
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("Travelling Mode");
 
-        jRadioButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton7.setText("Adult");
+        jRadioButton_adult.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_adult.setText("Adult");
 
-        jRadioButton8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jRadioButton8.setText("Child");
+        jRadioButton_child.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jRadioButton_child.setText("Child");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setText("Choose destination");
@@ -174,15 +174,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setText("Number of Adults");
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField_no_of_children.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField_no_of_adults.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setText("Number of Children");
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kandy", "Matara", "Badulle", "Jaffna" }));
+        jComboBox_destination.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jComboBox_destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kandy", "Matara", "Badulle", "Jaffna" }));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("Destination");
@@ -190,8 +190,8 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setText("Choose current location");
 
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Colombo" }));
+        jComboBox_currentLocation.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jComboBox_currentLocation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Colombo" }));
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
@@ -204,48 +204,48 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel13.setText("Sub Total");
 
-        jTextField3.setEditable(false);
-        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_total.setEditable(false);
+        jTextField_total.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        jTextField4.setEditable(false);
-        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_tax.setEditable(false);
+        jTextField_tax.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_tax.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jTextField_taxActionPerformed(evt);
             }
         });
 
-        jTextField5.setEditable(false);
-        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_subTotal.setEditable(false);
+        jTextField_subTotal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_subTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jTextField_subTotalActionPerformed(evt);
             }
         });
 
         jSeparator7.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton1.setText("Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_exit.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_exit.setText("Exit");
+        jButton_exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton_exitActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton2.setText("Total");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButton_total.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_total.setText("Total");
+        jButton_total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButton_totalActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton3.setText("Reset");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButton_reset.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_reset.setText("Reset");
+        jButton_reset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButton_resetActionPerformed(evt);
             }
         });
 
@@ -261,30 +261,30 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel17.setText("     Adults");
 
-        jTextField6.setEditable(false);
-        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_children.setEditable(false);
+        jTextField_children.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_children.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jTextField_childrenActionPerformed(evt);
             }
         });
 
-        jTextField7.setEditable(false);
-        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_mode.setEditable(false);
+        jTextField_mode.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        jTextField8.setEditable(false);
-        jTextField8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_type.setEditable(false);
+        jTextField_type.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_type.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTextField_typeActionPerformed(evt);
             }
         });
 
-        jTextField9.setEditable(false);
-        jTextField9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_adults.setEditable(false);
+        jTextField_adults.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_adults.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                jTextField_adultsActionPerformed(evt);
             }
         });
 
@@ -300,25 +300,25 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel21.setText("Date");
 
-        jTextField10.setEditable(false);
-        jTextField10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_to.setEditable(false);
+        jTextField_to.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        jTextField11.setEditable(false);
-        jTextField11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_from.setEditable(false);
+        jTextField_from.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
-        jTextField12.setEditable(false);
-        jTextField12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_date.setEditable(false);
+        jTextField_date.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_date.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
+                jTextField_dateActionPerformed(evt);
             }
         });
 
-        jTextField13.setEditable(false);
-        jTextField13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_time.setEditable(false);
+        jTextField_time.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_time.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                jTextField_timeActionPerformed(evt);
             }
         });
 
@@ -330,16 +330,16 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel23.setText("     Total Price");
 
-        jTextField14.setEditable(false);
-        jTextField14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_ticket_no.setEditable(false);
+        jTextField_ticket_no.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField_ticket_no.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
+                jTextField_ticket_noActionPerformed(evt);
             }
         });
 
-        jTextField15.setEditable(false);
-        jTextField15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField_total_price.setEditable(false);
+        jTextField_total_price.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel24.setText("                    Travelling Description");
@@ -369,13 +369,13 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                                     .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                                 .addGap(58, 58, 58)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                    .addComponent(jComboBox_destination, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jComboBox_currentLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(239, 239, 239)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
-                                                    .addComponent(jTextField1)))
+                                                    .addComponent(jTextField_no_of_adults, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
+                                                    .addComponent(jTextField_no_of_children)))
                                             .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -383,16 +383,16 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(layout.createSequentialGroup()
                                                         .addGap(151, 151, 151)
-                                                        .addComponent(jRadioButton2))
-                                                    .addComponent(jRadioButton1)
+                                                        .addComponent(jRadioButton_semiLuxury))
+                                                    .addComponent(jRadioButton_normal)
                                                     .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jRadioButton4)
+                                                        .addComponent(jRadioButton_firstClass)
                                                         .addGap(46, 46, 46)
-                                                        .addComponent(jRadioButton5)))
+                                                        .addComponent(jRadioButton_secondClass)))
                                                 .addGap(62, 62, 62)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jRadioButton6)
-                                                    .addComponent(jRadioButton3)))
+                                                    .addComponent(jRadioButton_thirdClass)
+                                                    .addComponent(jRadioButton_luxury)))
                                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(30, 30, 30)
                                         .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -402,9 +402,9 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton7)
+                                        .addComponent(jRadioButton_adult)
                                         .addGap(86, 86, 86)
-                                        .addComponent(jRadioButton8))
+                                        .addComponent(jRadioButton_child))
                                     .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -417,18 +417,18 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField3))
+                                            .addComponent(jTextField_total))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField5))
+                                            .addComponent(jTextField_subTotal))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(jTextField_tax, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jButton_total, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton_exit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton_reset, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(18, 18, 18)
                         .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -447,19 +447,19 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                    .addComponent(jTextField12)
-                                                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                                    .addComponent(jTextField13, javax.swing.GroupLayout.Alignment.LEADING)))
+                                                    .addComponent(jTextField_date)
+                                                    .addComponent(jTextField_to, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                                    .addComponent(jTextField_time, javax.swing.GroupLayout.Alignment.LEADING)))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(jTextField_from, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(18, 18, 18)
                                         .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField14)
-                                            .addComponent(jTextField15)
+                                            .addComponent(jTextField_ticket_no)
+                                            .addComponent(jTextField_total_price)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -474,13 +474,13 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField_mode, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextField8)
+                                        .addComponent(jTextField_type)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField_adults, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(jTextField_children, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(10, 10, 10))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -498,22 +498,22 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_tax, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField_subTotal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField_total, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_total, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_reset, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_exit, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(63, 63, 63))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel5)
@@ -523,16 +523,16 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3))
+                            .addComponent(jRadioButton_normal)
+                            .addComponent(jRadioButton_semiLuxury)
+                            .addComponent(jRadioButton_luxury))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton4)
-                            .addComponent(jRadioButton5)
-                            .addComponent(jRadioButton6))
+                            .addComponent(jRadioButton_firstClass)
+                            .addComponent(jRadioButton_secondClass)
+                            .addComponent(jRadioButton_thirdClass))
                         .addGap(20, 20, 20)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -541,17 +541,17 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                         .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton7)
-                            .addComponent(jRadioButton8))
+                            .addComponent(jRadioButton_adult)
+                            .addComponent(jRadioButton_child))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField_no_of_adults, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField_no_of_children, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -561,11 +561,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox_currentLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox_destination, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 15, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(7, 7, 7)
@@ -582,10 +582,10 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                         .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField_mode, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_type, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_adults, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_children, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -593,29 +593,29 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField_from, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(40, 40, 40)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField_to, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(40, 40, 40)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                                    .addComponent(jTextField12))
+                                    .addComponent(jTextField_date))
                                 .addGap(39, 39, 39)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField_time, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(45, 45, 45))
                             .addComponent(jSeparator10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTextField_ticket_no, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTextField_total_price, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(63, 63, 63)))))
                 .addContainerGap())
         );
@@ -623,61 +623,61 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void jRadioButton_normalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton_normalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_jRadioButton_normalActionPerformed
 
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+    private void jRadioButton_thirdClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton_thirdClassActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
+    }//GEN-LAST:event_jRadioButton_thirdClassActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void jRadioButton_luxuryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton_luxuryActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_jRadioButton_luxuryActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTextField_taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_taxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextField_taxActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void jTextField_subTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_subTotalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_jTextField_subTotalActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_exitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton_exitActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_totalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton_totalActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton_resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_resetActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButton_resetActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void jTextField_adultsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_adultsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_jTextField_adultsActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTextField_childrenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_childrenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTextField_childrenActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTextField_typeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_typeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTextField_typeActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void jTextField_dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_dateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_jTextField_dateActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void jTextField_timeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_timeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_jTextField_timeActionPerformed
 
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+    private void jTextField_ticket_noActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_ticket_noActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
+    }//GEN-LAST:event_jTextField_ticket_noActionPerformed
 
     /**
      * @param args the command line arguments
@@ -715,11 +715,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JButton jButton_exit;
+    private javax.swing.JButton jButton_reset;
+    private javax.swing.JButton jButton_total;
+    private javax.swing.JComboBox<String> jComboBox_currentLocation;
+    private javax.swing.JComboBox<String> jComboBox_destination;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -745,14 +745,14 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
+    private javax.swing.JRadioButton jRadioButton_adult;
+    private javax.swing.JRadioButton jRadioButton_child;
+    private javax.swing.JRadioButton jRadioButton_firstClass;
+    private javax.swing.JRadioButton jRadioButton_luxury;
+    private javax.swing.JRadioButton jRadioButton_normal;
+    private javax.swing.JRadioButton jRadioButton_secondClass;
+    private javax.swing.JRadioButton jRadioButton_semiLuxury;
+    private javax.swing.JRadioButton jRadioButton_thirdClass;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -764,20 +764,20 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTextField_adults;
+    private javax.swing.JTextField jTextField_children;
+    private javax.swing.JTextField jTextField_date;
+    private javax.swing.JTextField jTextField_from;
+    private javax.swing.JTextField jTextField_mode;
+    private javax.swing.JTextField jTextField_no_of_adults;
+    private javax.swing.JTextField jTextField_no_of_children;
+    private javax.swing.JTextField jTextField_subTotal;
+    private javax.swing.JTextField jTextField_tax;
+    private javax.swing.JTextField jTextField_ticket_no;
+    private javax.swing.JTextField jTextField_time;
+    private javax.swing.JTextField jTextField_to;
+    private javax.swing.JTextField jTextField_total;
+    private javax.swing.JTextField jTextField_total_price;
+    private javax.swing.JTextField jTextField_type;
     // End of variables declaration//GEN-END:variables
 }
