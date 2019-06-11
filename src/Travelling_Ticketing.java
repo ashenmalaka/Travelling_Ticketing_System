@@ -1,5 +1,7 @@
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -662,10 +664,17 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         //Code for time
-        Calender timer = Calender.getInstance();
+        /*Calender timer = Calender.getInstance();
         timer.getTime();
         SimpleDateFormat displayTime = new SimpleDateFormat("HH:mm:ss");
-        jTextField_time.setText(displayTime.format(timer.getTime()));
+        jTextField_time.setText(displayTime.format(timer.getTime()));*/
+        
+        Calendar calendar = new GregorianCalendar();
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int year = calendar.get(Calendar.YEAR);
+        jTextField_date.setText(day+"/"+(month+1)+"/"+year);
+        
         
         
         
