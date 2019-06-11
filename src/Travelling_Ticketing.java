@@ -663,7 +663,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     private void jButton_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_totalActionPerformed
         // TODO add your handling code here:
         
-        //Code for time
+        //Code for date
         /*Calender timer = Calender.getInstance();
         timer.getTime();
         SimpleDateFormat displayTime = new SimpleDateFormat("HH:mm:ss");
@@ -675,6 +675,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         int year = calendar.get(Calendar.YEAR);
         jTextField_date.setText(day+"/"+(month+1)+"/"+year);
         
+        //Code for Time 
+        int hour = calendar.get(Calendar.HOUR);
+        int minute = calendar.get(Calendar.MINUTE);
+        int second = calendar.get(Calendar.SECOND);
+        jTextField_time.setText(hour+":"+minute+":"+second);
         
         
         
