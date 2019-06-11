@@ -681,6 +681,10 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         int second = calendar.get(Calendar.SECOND);
         jTextField_time.setText(hour+":"+minute+":"+second);
         
+        //Code for "From" & "To"
+        jTextField_from.setText((String) jComboBox_currentLocation.getSelectedItem()+" *");
+        jTextField_to.setText((String) jComboBox_destination.getSelectedItem()+" *");
+        
         
         
     }//GEN-LAST:event_jButton_totalActionPerformed
