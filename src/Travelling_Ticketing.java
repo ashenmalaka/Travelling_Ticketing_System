@@ -1,5 +1,7 @@
 
+import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -658,6 +660,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
 
     private void jButton_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_totalActionPerformed
         // TODO add your handling code here:
+        
+        //Code for time
+        Calender timer = Calender.getInstance();
+        timer.getTime();
+        SimpleDateFormat displayTime = new SimpleDateFormat("HH:mm:ss");
+        jTextField_time.setText(displayTime.format(timer.getTime()));
+        
+        
+        
     }//GEN-LAST:event_jButton_totalActionPerformed
 
     private void jButton_resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_resetActionPerformed
