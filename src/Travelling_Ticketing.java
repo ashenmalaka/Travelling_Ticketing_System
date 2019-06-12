@@ -685,6 +685,16 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jTextField_from.setText((String) jComboBox_currentLocation.getSelectedItem()+" *");
         jTextField_to.setText((String) jComboBox_destination.getSelectedItem()+" *");
         
+        //Code for finding ticket number
+        int number;
+        String ticketNumber = "";
+        number = 1225 + (int)(Math.random()*4250);
+        ticketNumber += number + 1225;
+        jTextField_ticket_no.setText(ticketNumber);
+        
+        
+        
+        
         
         
     }//GEN-LAST:event_jButton_totalActionPerformed
