@@ -2,6 +2,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -33,6 +34,9 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -130,6 +134,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Buses");
 
+        buttonGroup2.add(jRadioButton_normal);
         jRadioButton_normal.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_normal.setText("Normal");
         jRadioButton_normal.addActionListener(new java.awt.event.ActionListener() {
@@ -138,9 +143,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup2.add(jRadioButton_semiLuxury);
         jRadioButton_semiLuxury.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_semiLuxury.setText("Semi Luxury");
 
+        buttonGroup2.add(jRadioButton_luxury);
         jRadioButton_luxury.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_luxury.setText("Luxury");
         jRadioButton_luxury.addActionListener(new java.awt.event.ActionListener() {
@@ -152,12 +159,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Trains");
 
+        buttonGroup1.add(jRadioButton_firstClass);
         jRadioButton_firstClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_firstClass.setText("First Class");
 
+        buttonGroup1.add(jRadioButton_secondClass);
         jRadioButton_secondClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_secondClass.setText("Second Class");
 
+        buttonGroup1.add(jRadioButton_thirdClass);
         jRadioButton_thirdClass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_thirdClass.setText("Third Class");
         jRadioButton_thirdClass.addActionListener(new java.awt.event.ActionListener() {
@@ -169,9 +179,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("Travelling Mode");
 
+        buttonGroup3.add(jRadioButton_adult);
         jRadioButton_adult.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_adult.setText("Adult");
 
+        buttonGroup3.add(jRadioButton_child);
         jRadioButton_child.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jRadioButton_child.setText("Child");
 
@@ -768,7 +780,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         double bus_cost_Badulle = 375.00;
         double bus_cost_Jaffna = 750.00;
         double no_of_adults;
-        
+             
         if((jRadioButton_normal.isSelected()) && (jRadioButton_adult.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
@@ -831,6 +843,9 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JButton jButton_exit;
     private javax.swing.JButton jButton_reset;
     private javax.swing.JButton jButton_total;
