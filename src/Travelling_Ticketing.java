@@ -769,10 +769,6 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         double bus_cost_Jaffna = 750.00;
         double no_of_adults;
         
-        
-        
-        
-        
         if((jRadioButton_normal.isSelected()) && (jRadioButton_adult.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
@@ -781,7 +777,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
             jTextField_tax.setText(bus_tax_Kandy_string);
             
             no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
-            String bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy*no_of_adults);
+            String bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy * no_of_adults);
             jTextField_subTotal.setText(bus_cost_Kandy_string);
             
             double bus_total_cost_Kandy = bus_tax_Kandy + (bus_cost_Kandy) * no_of_adults ;
