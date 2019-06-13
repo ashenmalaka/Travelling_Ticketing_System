@@ -242,6 +242,11 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
 
         jButton_total.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton_total.setText("Total");
+        jButton_total.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_totalMouseClicked(evt);
+            }
+        });
         jButton_total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_totalActionPerformed(evt);
@@ -754,6 +759,45 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
     private void jTextField_ticket_noActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_ticket_noActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_ticket_noActionPerformed
+
+    private void jButton_totalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_totalMouseClicked
+        // TODO add your handling code here:
+        double bus_tax = 20.50;
+        double bus_cost_Kandy = 150.00;
+        double bus_cost_Matara = 275.00;
+        double bus_cost_Badulle = 375.00;
+        double bus_cost_Jaffna = 750.00;
+        double no_of_adults;
+        
+        
+        
+        
+        
+        if((jRadioButton_normal.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Kandy"))
+        {
+            double bus_tax_Kandy = (bus_tax * bus_cost_Kandy)/100;
+            String bus_tax_Kandy_string = String.format("Rs %.2f",bus_tax_Kandy);
+            jTextField_tax.setText(bus_tax_Kandy_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy*no_of_adults);
+            jTextField_subTotal.setText(bus_cost_Kandy_string);
+            
+            double bus_total_cost_Kandy = bus_tax_Kandy + (bus_cost_Kandy) * no_of_adults ;
+            String bus_total_cost_Kandy_string = String.format("Rs %.2f",bus_total_cost_Kandy);
+            jTextField_total.setText(bus_total_cost_Kandy_string);
+            
+            jTextField_total_price.setText(bus_total_cost_Kandy_string);
+            
+            jTextField_mode.setText("Bus - Normal");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+            
+        }
+    }//GEN-LAST:event_jButton_totalMouseClicked
 
     /**
      * @param args the command line arguments
