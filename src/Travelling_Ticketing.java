@@ -780,7 +780,9 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         double bus_cost_Badulle = 375.00;
         double bus_cost_Jaffna = 750.00;
         double no_of_adults;
-             
+        double no_of_children;
+         
+        //For Kandy
         if((jRadioButton_normal.isSelected()) && (jRadioButton_adult.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
@@ -851,6 +853,79 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
             
             jTextField_children.setText("NULL");
         }
+        else if((jRadioButton_normal.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Kandy"))
+        {
+            double bus_tax_Kandy = (bus_tax * (bus_cost_Kandy * 0.5))/100;
+            String bus_tax_Kandy_string = String.format("Rs %.2f",bus_tax_Kandy);
+            jTextField_tax.setText(bus_tax_Kandy_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy * 0.5 * no_of_children);
+            jTextField_subTotal.setText(bus_cost_Kandy_string);
+            
+            double bus_total_cost_Kandy = bus_tax_Kandy + (bus_cost_Kandy * 0.5) * no_of_children ;
+            String bus_total_cost_Kandy_string = String.format("Rs %.2f",bus_total_cost_Kandy);
+            jTextField_total.setText(bus_total_cost_Kandy_string);
+            
+            jTextField_total_price.setText(bus_total_cost_Kandy_string);
+            
+            jTextField_mode.setText("Bus - Normal");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_semiLuxury.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Kandy"))
+        {
+            double semi_luxury_bus_tax_Kandy = (bus_tax * (bus_cost_Kandy * 0.5 * 1.5))/100;
+            String semi_luxury_bus_tax_Kandy_string = String.format("Rs %.2f",semi_luxury_bus_tax_Kandy);
+            jTextField_tax.setText(semi_luxury_bus_tax_Kandy_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String semi_luxury_bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy * 0.5 * 1.5 * no_of_children);
+            jTextField_subTotal.setText(semi_luxury_bus_cost_Kandy_string);
+            
+            double semi_luxury_bus_total_cost_Kandy = semi_luxury_bus_tax_Kandy + (bus_cost_Kandy * 0.5 * 1.5) * no_of_children ;
+            String semi_luxury_bus_total_cost_Kandy_string = String.format("Rs %.2f",semi_luxury_bus_total_cost_Kandy);
+            jTextField_total.setText(semi_luxury_bus_total_cost_Kandy_string);
+            
+            jTextField_total_price.setText(semi_luxury_bus_total_cost_Kandy_string);
+            
+            jTextField_mode.setText("Bus - Semi");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_luxury.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Kandy"))
+        {
+            double luxury_bus_tax_Kandy = (bus_tax * (bus_cost_Kandy * 0.5 * 2))/100;
+            String luxury_bus_tax_Kandy_string = String.format("Rs %.2f",luxury_bus_tax_Kandy);
+            jTextField_tax.setText(luxury_bus_tax_Kandy_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String luxury_bus_cost_Kandy_string = String.format("Rs %.2f",bus_cost_Kandy * 0.5 * 2 * no_of_children);
+            jTextField_subTotal.setText(luxury_bus_cost_Kandy_string);
+            
+            double luxury_bus_total_cost_Kandy = luxury_bus_tax_Kandy + (bus_cost_Kandy * 0.5 * 2) * no_of_children ;
+            String luxury_bus_total_cost_Kandy_string = String.format("Rs %.2f",luxury_bus_total_cost_Kandy);
+            jTextField_total.setText(luxury_bus_total_cost_Kandy_string);
+            
+            jTextField_total_price.setText(luxury_bus_total_cost_Kandy_string);
+            
+            jTextField_mode.setText("Bus - Luxury");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        
     }//GEN-LAST:event_jButton_totalMouseClicked
 
     /**
