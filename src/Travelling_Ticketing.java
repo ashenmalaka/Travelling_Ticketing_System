@@ -938,15 +938,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         if((jRadioButton_firstClass.isSelected()) && (jRadioButton_adult.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
-            double train_tax_Kandy = (train_tax * train_cost_Kandy)/100;
+            double train_tax_Kandy = (train_tax * train_cost_Kandy * 2)/100;
             String train_tax_Kandy_string = String.format("Rs %.2f",train_tax_Kandy);
             jTextField_tax.setText(train_tax_Kandy_string);
             
             no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
-            String train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * no_of_adults);
+            String train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 2 * no_of_adults);
             jTextField_subTotal.setText(train_cost_Kandy_string);
             
-            double train_total_cost_Kandy = train_tax_Kandy + (train_cost_Kandy) * no_of_adults ;
+            double train_total_cost_Kandy = train_tax_Kandy + (train_cost_Kandy * 2 * no_of_adults) ;
             String train_total_cost_Kandy_string = String.format("Rs %.2f",train_total_cost_Kandy);
             jTextField_total.setText(train_total_cost_Kandy_string);
             
@@ -985,15 +985,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         else if((jRadioButton_thirdClass.isSelected()) && (jRadioButton_adult.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
-            double third_class_train_tax_Kandy = (train_tax * (train_cost_Kandy * 2))/100;
+            double third_class_train_tax_Kandy = (train_tax * train_cost_Kandy)/100;
             String third_class_train_tax_Kandy_string = String.format("Rs %.2f",third_class_train_tax_Kandy);
             jTextField_tax.setText(third_class_train_tax_Kandy_string);
             
             no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
-            String third_class_train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 2 * no_of_adults);
+            String third_class_train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * no_of_adults);
             jTextField_subTotal.setText(third_class_train_cost_Kandy_string);
             
-            double third_class_train_total_cost_Kandy = third_class_train_tax_Kandy + (train_cost_Kandy * 2) * no_of_adults ;
+            double third_class_train_total_cost_Kandy = third_class_train_tax_Kandy + (train_cost_Kandy * no_of_adults) ;
             String third_class_train_total_cost_Kandy_string = String.format("Rs %.2f",third_class_train_total_cost_Kandy);
             jTextField_total.setText(third_class_train_total_cost_Kandy_string);
             
@@ -1008,15 +1008,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         else if((jRadioButton_firstClass.isSelected()) && (jRadioButton_child.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
-            double train_tax_Kandy = (train_tax * (train_cost_Kandy * 0.5))/100;
+            double train_tax_Kandy = (train_tax * (train_cost_Kandy * 0.5 * 2))/100;
             String train_tax_Kandy_string = String.format("Rs %.2f",train_tax_Kandy);
             jTextField_tax.setText(train_tax_Kandy_string);
             
             no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
-            String train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 0.5 * no_of_children);
+            String train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 0.5 * 2 * no_of_children);
             jTextField_subTotal.setText(train_cost_Kandy_string);
             
-            double train_total_cost_Kandy = train_tax_Kandy + (train_cost_Kandy * 0.5) * no_of_children ;
+            double train_total_cost_Kandy = train_tax_Kandy + (train_cost_Kandy * 0.5 *2) * no_of_children ;
             String train_total_cost_Kandy_string = String.format("Rs %.2f",train_total_cost_Kandy);
             jTextField_total.setText(train_total_cost_Kandy_string);
             
@@ -1056,15 +1056,15 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         else if((jRadioButton_thirdClass.isSelected()) && (jRadioButton_child.isSelected()) && 
                 jComboBox_destination.getSelectedItem().equals("Kandy"))
         {
-            double third_class_train_tax_Kandy = (train_tax * (train_cost_Kandy * 0.5 * 2))/100;
+            double third_class_train_tax_Kandy = (train_tax * (train_cost_Kandy * 0.5))/100;
             String third_class_train_tax_Kandy_string = String.format("Rs %.2f",third_class_train_tax_Kandy);
             jTextField_tax.setText(third_class_train_tax_Kandy_string);
             
             no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
-            String third_class_train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 0.5 * 2 * no_of_children);
+            String third_class_train_cost_Kandy_string = String.format("Rs %.2f",train_cost_Kandy * 0.5 * no_of_children);
             jTextField_subTotal.setText(third_class_train_cost_Kandy_string);
             
-            double third_class_train_total_cost_Kandy = third_class_train_tax_Kandy + (train_cost_Kandy * 0.5 * 2) * no_of_children ;
+            double third_class_train_total_cost_Kandy = third_class_train_tax_Kandy + (train_cost_Kandy * 0.5) * no_of_children ;
             String third_class_train_total_cost_Kandy_string = String.format("Rs %.2f",third_class_train_total_cost_Kandy);
             jTextField_total.setText(third_class_train_total_cost_Kandy_string);
             
@@ -1225,6 +1225,148 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         
         //For Matara(Train)
         
+        if((jRadioButton_firstClass.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double train_tax_Matara = (train_tax * train_cost_Matara * 2)/100;
+            String train_tax_Matara_string = String.format("Rs %.2f",train_tax_Matara);
+            jTextField_tax.setText(train_tax_Matara_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * 2 * no_of_adults);
+            jTextField_subTotal.setText(train_cost_Matara_string);
+            
+            double train_total_cost_Matara = train_tax_Matara + (train_cost_Matara * 2) * no_of_adults ;
+            String train_total_cost_Matara_string = String.format("Rs %.2f",train_total_cost_Matara);
+            jTextField_total.setText(train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - First");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+            
+        }
+        else if((jRadioButton_secondClass.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double second_class_train_tax_Matara = (train_tax * (train_cost_Matara * 1.5))/100;
+            String second_class_train_tax_Matara_string = String.format("Rs %.2f",second_class_train_tax_Matara);
+            jTextField_tax.setText(second_class_train_tax_Matara_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String second_class_train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * 1.5 * no_of_adults);
+            jTextField_subTotal.setText(second_class_train_cost_Matara_string);
+            
+            double second_class_train_total_cost_Matara = second_class_train_tax_Matara + (train_cost_Matara * 1.5) * no_of_adults ;
+            String second_class_train_total_cost_Matara_string = String.format("Rs %.2f",second_class_train_total_cost_Matara);
+            jTextField_total.setText(second_class_train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(second_class_train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - Second");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+        }
+        else if((jRadioButton_thirdClass.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double third_class_train_tax_Matara = (train_tax * train_cost_Matara)/100;
+            String third_class_train_tax_Matara_string = String.format("Rs %.2f",third_class_train_tax_Matara);
+            jTextField_tax.setText(third_class_train_tax_Matara_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String third_class_train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * no_of_adults);
+            jTextField_subTotal.setText(third_class_train_cost_Matara_string);
+            
+            double third_class_train_total_cost_Matara = third_class_train_tax_Matara + (train_cost_Matara * no_of_adults);
+            String third_class_train_total_cost_Matara_string = String.format("Rs %.2f",third_class_train_total_cost_Matara);
+            jTextField_total.setText(third_class_train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(third_class_train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - Third");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+        }
+        else if((jRadioButton_firstClass.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double train_tax_Matara = (train_tax * (train_cost_Matara * 0.5 *2))/100;
+            String train_tax_Matara_string = String.format("Rs %.2f",train_tax_Matara);
+            jTextField_tax.setText(train_tax_Matara_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * 0.5 * 2 * no_of_children);
+            jTextField_subTotal.setText(train_cost_Matara_string);
+            
+            double train_total_cost_Matara = train_tax_Matara + (train_cost_Matara * 0.5 * 2) * no_of_children ;
+            String train_total_cost_Matara_string = String.format("Rs %.2f",train_total_cost_Matara);
+            jTextField_total.setText(train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - First");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_secondClass.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double second_class_train_tax_Matara = (train_tax * (train_cost_Matara * 0.5 * 1.5))/100;
+            String second_class_train_tax_Matara_string = String.format("Rs %.2f",second_class_train_tax_Matara);
+            jTextField_tax.setText(second_class_train_tax_Matara_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String second_class_train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * 0.5 * 1.5 * no_of_children);
+            jTextField_subTotal.setText(second_class_train_cost_Matara_string);
+            
+            double second_class_train_total_cost_Matara = second_class_train_tax_Matara + (train_cost_Matara * 0.5 * 1.5) * no_of_children ;
+            String second_class_train_total_cost_Matara_string = String.format("Rs %.2f",second_class_train_total_cost_Matara);
+            jTextField_total.setText(second_class_train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(second_class_train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - Second");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_thirdClass.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Matara"))
+        {
+            double third_class_train_tax_Matara = (train_tax * (train_cost_Kandy * 0.5))/100;
+            String third_class_train_tax_Matara_string = String.format("Rs %.2f",third_class_train_tax_Matara);
+            jTextField_tax.setText(third_class_train_tax_Matara_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String third_class_train_cost_Matara_string = String.format("Rs %.2f",train_cost_Matara * 0.5 * no_of_children);
+            jTextField_subTotal.setText(third_class_train_cost_Matara_string);
+            
+            double third_class_train_total_cost_Matara = third_class_train_tax_Matara + (train_cost_Matara * 0.5) * no_of_children ;
+            String third_class_train_total_cost_Matara_string = String.format("Rs %.2f",third_class_train_total_cost_Matara);
+            jTextField_total.setText(third_class_train_total_cost_Matara_string);
+            
+            jTextField_total_price.setText(third_class_train_total_cost_Matara_string);
+            
+            jTextField_mode.setText("Train - Third");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
         
     }//GEN-LAST:event_jButton_totalMouseClicked
 
