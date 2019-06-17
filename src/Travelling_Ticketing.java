@@ -1368,6 +1368,150 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
             
         }
         
+        //For Badulle(Bus)
+        
+        if((jRadioButton_normal.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double bus_tax_Badulle = (bus_tax * bus_cost_Badulle)/100;
+            String bus_tax_Badulle_string = String.format("Rs %.2f",bus_tax_Badulle);
+            jTextField_tax.setText(bus_tax_Badulle_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * no_of_adults);
+            jTextField_subTotal.setText(bus_cost_Badulle_string);
+            
+            double bus_total_cost_Badulle = bus_tax_Badulle + (bus_cost_Badulle) * no_of_adults ;
+            String bus_total_cost_Badulle_string = String.format("Rs %.2f",bus_total_cost_Badulle);
+            jTextField_total.setText(bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Normal");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+            
+        }
+        else if((jRadioButton_semiLuxury.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double semi_luxury_bus_tax_Badulle = (bus_tax * (bus_cost_Badulle * 1.5))/100;
+            String semi_luxury_bus_tax_Badulle_string = String.format("Rs %.2f",semi_luxury_bus_tax_Badulle);
+            jTextField_tax.setText(semi_luxury_bus_tax_Badulle_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String semi_luxury_bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * 1.5 * no_of_adults);
+            jTextField_subTotal.setText(semi_luxury_bus_cost_Badulle_string);
+            
+            double semi_luxury_bus_total_cost_Badulle = semi_luxury_bus_tax_Badulle + (bus_cost_Badulle * 1.5) * no_of_adults ;
+            String semi_luxury_bus_total_cost_Badulle_string = String.format("Rs %.2f",semi_luxury_bus_total_cost_Badulle);
+            jTextField_total.setText(semi_luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(semi_luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Semi");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+        }
+        else if((jRadioButton_luxury.isSelected()) && (jRadioButton_adult.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double luxury_bus_tax_Badulle = (bus_tax * (bus_cost_Badulle * 2))/100;
+            String luxury_bus_tax_Badulle_string = String.format("Rs %.2f",luxury_bus_tax_Badulle);
+            jTextField_tax.setText(luxury_bus_tax_Badulle_string);
+            
+            no_of_adults = Double.parseDouble(jTextField_no_of_adults.getText());
+            String luxury_bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * 2 * no_of_adults);
+            jTextField_subTotal.setText(luxury_bus_cost_Badulle_string);
+            
+            double luxury_bus_total_cost_Badulle = luxury_bus_tax_Badulle + (bus_cost_Badulle * 2) * no_of_adults ;
+            String luxury_bus_total_cost_Badulle_string = String.format("Rs %.2f",luxury_bus_total_cost_Badulle);
+            jTextField_total.setText(luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Luxury");
+            jTextField_type.setText("Adult");
+            jTextField_adults.setText(jTextField_no_of_adults.getText());
+            
+            jTextField_children.setText("NULL");
+        }
+        else if((jRadioButton_normal.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double bus_tax_Badulle = (bus_tax * (bus_cost_Badulle * 0.5))/100;
+            String bus_tax_Badulle_string = String.format("Rs %.2f",bus_tax_Badulle);
+            jTextField_tax.setText(bus_tax_Badulle_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * 0.5 * no_of_children);
+            jTextField_subTotal.setText(bus_cost_Badulle_string);
+            
+            double bus_total_cost_Badulle = bus_tax_Badulle + (bus_cost_Badulle * 0.5) * no_of_children ;
+            String bus_total_cost_Badulle_string = String.format("Rs %.2f",bus_total_cost_Badulle);
+            jTextField_total.setText(bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Normal");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_semiLuxury.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double semi_luxury_bus_tax_Badulle = (bus_tax * (bus_cost_Badulle * 0.5 * 1.5))/100;
+            String semi_luxury_bus_tax_Badulle_string = String.format("Rs %.2f",semi_luxury_bus_tax_Badulle);
+            jTextField_tax.setText(semi_luxury_bus_tax_Badulle_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String semi_luxury_bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * 0.5 * 1.5 * no_of_children);
+            jTextField_subTotal.setText(semi_luxury_bus_cost_Badulle_string);
+            
+            double semi_luxury_bus_total_cost_Badulle = semi_luxury_bus_tax_Badulle + (bus_cost_Badulle * 0.5 * 1.5) * no_of_children ;
+            String semi_luxury_bus_total_cost_Badulle_string = String.format("Rs %.2f",semi_luxury_bus_total_cost_Badulle);
+            jTextField_total.setText(semi_luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(semi_luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Semi");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
+        else if((jRadioButton_luxury.isSelected()) && (jRadioButton_child.isSelected()) && 
+                jComboBox_destination.getSelectedItem().equals("Badulle"))
+        {
+            double luxury_bus_tax_Badulle = (bus_tax * (bus_cost_Badulle * 0.5 * 2))/100;
+            String luxury_bus_tax_Badulle_string = String.format("Rs %.2f",luxury_bus_tax_Badulle);
+            jTextField_tax.setText(luxury_bus_tax_Badulle_string);
+            
+            no_of_children = Double.parseDouble(jTextField_no_of_children.getText());
+            String luxury_bus_cost_Badulle_string = String.format("Rs %.2f",bus_cost_Badulle * 0.5 * 2 * no_of_children);
+            jTextField_subTotal.setText(luxury_bus_cost_Badulle_string);
+            
+            double luxury_bus_total_cost_Badulle = luxury_bus_tax_Badulle + (bus_cost_Badulle * 0.5 * 2) * no_of_children ;
+            String luxury_bus_total_cost_Badulle_string = String.format("Rs %.2f",luxury_bus_total_cost_Badulle);
+            jTextField_total.setText(luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_total_price.setText(luxury_bus_total_cost_Badulle_string);
+            
+            jTextField_mode.setText("Bus - Luxury");
+            jTextField_type.setText("Child");
+            jTextField_children.setText(jTextField_no_of_children.getText());
+            
+            jTextField_adults.setText("NULL");
+            
+        }
     }//GEN-LAST:event_jButton_totalMouseClicked
 
     /**
