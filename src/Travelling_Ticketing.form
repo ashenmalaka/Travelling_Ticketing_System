@@ -602,7 +602,7 @@
             <StringItem index="1" value="Kandy"/>
             <StringItem index="2" value="Matara"/>
             <StringItem index="3" value="Badulle"/>
-            <StringItem index="4" value="Jaffna"/>
+            <StringItem index="4" value=" "/>
           </StringArray>
         </Property>
       </Properties>
