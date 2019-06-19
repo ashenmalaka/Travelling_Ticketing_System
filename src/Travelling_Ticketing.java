@@ -201,7 +201,7 @@ public class Travelling_Ticketing extends javax.swing.JFrame {
         jLabel8.setText("Number of Children");
 
         jComboBox_destination.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox_destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Kandy", "Matara", "Badulle", " " }));
+        jComboBox_destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Kandy", "Matara", "Badulle" }));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("Destination");
